@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+
+}
+
+:root {
+    --bg-color: #000;
+    --second-bg-color: #111;
+    --text-color: #fff;
+    --main-color: #FF0000;
+
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}
+
+/* Header section code */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease-in-out;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.03);
+}
+
+span {
+    background: linear-gradient(to right, #00b4db, #0083b0); /* New gradient colors */
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+.nav-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn i {
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+
+.nav-btn:hover {
+    background: var(--main-color);
+    color: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+
+/* Home section code */
+
+section {
+    min-height: 100vh;
+    padding: 10rem 8% 10rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+span {
+    background: linear-gradient(to right, #00b4db, #0083b0); /* New gradient colors */
+    background-clip: text;
+    color: transparent;
+}
+
+.logo span {
+    background: linear-gradient(to right, #00b4db, #0083b0); /* New gradient colors */
+    background-clip: text;
+    color: transparent;
+}
+
+.home-content h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.home-content h3 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.multiple-text {
+    font-size: 3.5rem;
+}
+
+.home-content h1 {
+    font-size: 6.5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-img img {
+    position: relative;
+    top: 3rem;
+    width: 22vw;
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--second-bg-color);
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 1000px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 1.8rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0 22px var(--main-color);
+}
+
+/* Scroll bar design */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #00b4db, #0083b0); /* New gradient colors */
+    width: 50px;
+}
+
+/* Skills Section Code */
+/* Common styles */
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+}
+
+.skill-content {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.category-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.skill-content .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: var(--bg-color);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 6px;
+    background: var(--main-color);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: var(--main-color);
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: var(--main-color);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.skill-img img {
+    position: relative;
+    width: 30vw;
+    border-radius: 19%;
+    box-shadow: 0 0 16px var(--main-color);
+    top: 1rem;
+}
+
+/* Service Section Code */
+.heading {
+    text-align: center;
+    font-size: 6rem;
+}
+
+.services {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 27rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border-top: 0.6rem solid var(--main-color);
+    border-bottom: 0.6rem solid var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+
+.services-container .services-box:hover {
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+    transition: 0.4s ease-in-out;
+}
+
+.services-box:hover h3 {
+    color: var(--main-color);
+}
+
+.services-box p {
+    font-size: 1.2rem;
+    margin: 1rem 0 3rem;
+    text-align: justify;
+    line-height: 1.6;
+    text-justify: inter-word;
+}
+
+/* Portfolio Section Code */
+
+.portfolio {
+    padding-bottom: 10rem;
+    background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: 0.4s ease-in-out;
+
+} 
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
+}
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.5rem;
+    margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--text-color);
+    border-radius: 50%;
+
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--bg-color);
+}
+
+/* Footer section code */
+
+#contact {
+    padding: 3rem 14% 2rem;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.col {
+    width: 45%; /* Adjusted width for better alignment */
+}
+
+.col h4 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.col h4::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--main-color);
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* Social Media Icons */
+.col .social {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col .social a {
+    height: 4rem;
+    width: 4rem;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.col .social a:hover {
+    transform: scale(1.01);
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
+.col .social a i {
+    font-size: 2rem;
+}
+
+
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+    .col {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:991px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        transition: all 0.5s ease;
+    }
+    .navbar a {
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+    .navbar.active {
+        right: 0;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+}
+
+@media (max-width: 895px) {
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 7rem;
+        margin-top: 3rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .home-img img{
+        width: 56vw;
+        margin-top: -2rem;
+    }
+    .skill{
+        flex-direction: column-reverse;
+    }
+    .skill-content{
+        margin: 0 2rem 4rem;
+    }
+    .skill img{
+        width: 52vw;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 617px) {
+    .portfolio .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 426px) {
+    .home-content h1{
+        font-size: 5.5rem;
+    }
+    .heading{
+        font-size: 5rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
