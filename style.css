@@ -327,7 +327,7 @@ span {
     width: 30vw;
     border-radius: 19%;
     box-shadow: 0 0 16px var(--main-color);
-    top: 1rem;
+    top: -10rem;
 }
 
 /* Service Section Code */
