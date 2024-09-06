@@ -188,9 +188,13 @@ span {
 }
 
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 500;
     max-width: 1000px;
+    text-align: justify; /* Distributes text evenly */
+    margin: 0 auto; /* Centers the paragraph */
+    line-height: 1.6; /* Increases line spacing for better readability */
+    word-spacing: 0.1rem; /* Adds a slight space between words */
 }
 
 .btn {
